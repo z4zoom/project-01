@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR:wght@100&family=Quicksand:wght@300&family=Rubik&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*navigathion bar*/
+ul{
+    list-style-type: none;
+   
+}
+.logo{
+    text-align: center;
+    height: 40px;
+    background-color: blue;
+    margin: 0;
+}
+
+ a{
+     text-decoration: none;
+     color: black;
+ }
+ 
+
+/*search bar*/
+.area{
+    
+    height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+    background-image: url("images/bacground.jpg");
+    background-position: center;
+    background-size: cover;
+   
+
+}
+.area h1{
+    text-transform: uppercase;
+    color: black;
+}
+
+img{
+    object-fit: cover;
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+button{
+    order: 1;
+    border: none;
+    height: 50px;
+    width: 50px;  
+    background-color: bisque; 
+    
+}
+input{
+    border: none;
+    outline: none;
+    font-size: larger;
+    
+}
+.area p{
+    font-size: 50px;
+    color: azure;
+    
+}
+/*paragraph*/
+.paragraph{
+ margin: 0 40px;
+}
+.paragraph h1{
+    color: black;
+}
+.paragraph p{
+    font-size: larger;
+}
