@@ -196,6 +196,52 @@
        </div>
      </div>
    </div>
+   div.containe
+  <div class="slider_show">
+    <div class="slider">
+      <div class="sliders">
+        <input type="radio" name="radio-but" id="radio-1" />
+        <input type="radio" name="radio-but" id="radio-2" />
+        <input type="radio"  name="radio-but" id="radio-3" />
+        <input type="radio"  name="radio-but" id="radio-4" />
+        <div class="slide first">
+          <img src="images/01.jpg" alt="" />
+        </div>
+        <div class="slide ">
+          <img src="images/02.jpg" alt="" />
+        </div>
+        <div class="slide ">
+          <img src="images/03.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/04.jpg" alt="" />
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-butt1"></div>
+          <div class="auto-butt2"></div>
+          <div class="auto-butt3"></div>
+          <div class="auto-butt4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio-1" class="manual-butt"></label>
+        <label for="radio-2" class="manual-butt"></label>
+        <label for="radio-3" class="manual-butt"></label>
+        <label for="radio-4" class="manual-butt"></label>
+      </div>
+    </div>
+  </div>
+   
+   <script type="text/javascript">
+     var cout=1;
+    setInterval(function(){
+      document.getElementById('radio-'+cout).checked=true;
+      cout++;
+      if(cout > 4){
+        cout=1;
+      }
+    },5000)
+   </script>
   
 </body>
 </html>
