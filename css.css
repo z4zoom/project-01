@@ -223,16 +223,27 @@ input {
   text-transform: uppercase;
 }
 /*images-sider*/
+.pra{
+  text-transform: uppercase;
+  font-size: 25px;
+  position: relative;
+ text-align: center;
+}
+.pra p{
+  color: brown;
+}
 .slider_show{
    padding: 0;
     margin: 0;
-    height: 150 vh;
+   height: 500px;
     display: flex;
-   justify-content: flex-end;
-   background-color: aqua;
+   justify-content: center;
+   align-items: center;
+flex-wrap: wrap;
+  
 }
-.slider{
 
+.slider{
     width: 800px;
     height: 500px;
     border-radius:10px ;
@@ -252,7 +263,7 @@ display: none;
 }
 .slide img{
     width: 800px;
-   
+   display: flex;
     height: 500px;
 }
 .navigation-manual{
@@ -260,6 +271,7 @@ display: none;
     width: 800px;
     margin-top: -40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .manual-butt {
@@ -290,6 +302,7 @@ margin-left:-60% ;
 .navigation-auto{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     width: 800px;
     justify-content: center;
     margin-top: 460px;
@@ -314,4 +327,41 @@ margin-left:-60% ;
 }
 #radio-4:checked~ .navigation-auto.auto-butt1{
     background: red;
-}       
+} 
+/*end of page*/
+.end{
+  padding-bottom: 10px;
+  display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 50px;
+background-color: antiquewhite;
+} 
+.end-1{
+flex: 2;
+}
+.end-2{
+flex: 2;
+}
+.end-3{
+flex: 2;
+}
+.end-4{
+  border-top: 2px solid whitesmoke;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+.end-4 ul{
+display: flex;
+}
+.end-4 img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.end-4 ul li{
+  padding-top: 10px;
+}
