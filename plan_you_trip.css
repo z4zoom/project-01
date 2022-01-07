@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR:wght@100&family=Quicksand:wght@300&family=Rubik&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  background-color: azure;
+   scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/*navigathion bar*/
+ul {
+  list-style-type: none;
+}
+.logo {
+  text-align: center;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+ul li {
+  flex: 20%;
+}
+
+.container-2 {
+  text-align: center;
+  z-index: 5;
+  background-color: antiquewhite;
+}
+
+.box {
+  padding: 10px 0;
+}
+.box:hover {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  transform: scale(1.5);
+}
+/*end*/
+/*cover photo*/
+.berak {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("images/background-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.berak p {
+  text-transform: uppercase;
+  font-size: 100px;
+  color: black;
+}
+/*end*/
+/*down bar*/
+.down{
+   position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.down_navi-1 {
+  text-align: center;
+  background-color:whitesmoke;
+  width: 100%;
+}
+.box-d {
+  padding: 10px 0;
+}
+.down_navi-1 ul li{
+    font-size: larger;
+    text-transform: uppercase;
+
+}
+/*end*/
+/*first_step*/
+.container-3{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+.container-3-grid{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows: auto;
+  padding-left: 30px;
+  
+}
+.co-images{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+.co-item img{
+    object-fit: cover;
+}
+.co-images img{
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.titel{
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 50px;
+  text-transform: uppercase;
+  
+}
+.sub_titel{
+
+    text-transform: uppercase;
+}
+.container-4{
+  
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.container-3-grid{
+ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px ,1fr));
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  
+  
+}
+.co-images{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+.co1-item img{
+    object-fit: cover;
+}
+.co-images img{
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.sub_titel{
+    text-transform: uppercase;
+}
+ .titel-1{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px ;
+  margin-top: 0;
+}
+.titel-1 h1{
+  margin: 50px;
+  font-size: 50px;
+}
+.titel-1 p{
+  font-size: 20px;
+}
+/*card*/
+.card{
+  
+  cursor: pointer;
+  background: white;
+  overflow: hidden;
+ box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+  border-radius: .25rem; 
+  max-width: 300px;
+}
+.card-image {
+  overflow: hidden;
+}
+.card-image img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  max-height: 200px;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+.card-body{
+   font-size: .9rem;
+   padding: 0 10px;
+}
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+  grid-gap: 10px;
+  margin: 0 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.card:hover>.card-image > img{
+transform: scale(1.025);
+
+}
+/*distric*/
+
+.accordion_button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: aqua;
+    border: none;
+    outline: none;
+  cursor: pointer;
+overflow: hidden;
+    transition: background 0.02s;
+  text-transform: uppercase;
+}
+
+.accordion_button::after{
+  content: '\25be';
+  float: right;
+  transform:scale(1.5) ;
+}
+.accordion_button--active::after{
+  content: '\25b4';
+
+} 
+.accordion_button--active{
+  background: #555555;
+}
+.accordion_button--active + .accordion_content{display: block}
+.accordion_content{
+ 
+  background: #EEEEEE;
+display: none;
+  overflow: auto;
+ 
+}
