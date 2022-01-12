@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+KR:wght@100&family=Quicksand:wght@300&family=Rubik&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  background-color: azure;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+/*navigathion bar*/
+ul {
+  list-style-type: none;
+}
+.logo {
+  text-align: center;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+ul li {
+  flex: 20%;
+}
+
+.container-2 {
+  text-align: center;
+  z-index: 5;
+  background-color: antiquewhite;
+  position: sticky;
+  top: 0;
+}
+
+.box {
+  padding: 10px 0;
+}
+.box:hover {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  transform: scale(1.5);
+}
+.warp{
+  margin-top: 100px;
+  display: flex;
+  width: 70%;
+ justify-content: center;  
+width: 100%;
+
+overflow: hidden;
+ 
+}
+.card{
+ margin: 10px;
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  margin: 10px;
+}
+.card:hover{
+  transform: translate(20px);
+
+}
+.card::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background:  linear-gradient(to bottom,rgba(16, 17, 17, 0.5),rgb(88, 88, 87));
+   z-index: 2;
+   transition: 0.5s all;
+   opacity: 0;
+}
+ .card:hover:before{
+   opacity: 1;
+ }
+ .card-image img{
+   width: 100%;
+   height: 100%;
+object-fit: cover;
+position: absolute;
+top: 0;
+left: 0; 
+ } 
+
+ .card-body{
+    position: relative;
+    z-index: 3;
+    color: #ffff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 00.5s all;
+ }
+ .card-body:hover{
+opacity: 1;
+ }
+ .cover_image img{
+   width: 100%;
+ }
+ .pr{
+   display: flex;
+   
+  overflow: hidden;
+ 
+  border-radius: .25rem; 
+ margin: 20px 50px;
+ }
+ .pr-images img{
+     height: 300px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+ }
+ .titel{
+   margin: 50px 0px;
+   font-size: 50px;
+ }

@@ -3,8 +3,7 @@ body {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
   background-color: azure;
-   scroll-snap-type:y mandatory;
-    overflow-y: scroll;
+  
 }
 html {
   scroll-behavior: smooth;
