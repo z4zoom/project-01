@@ -248,3 +248,20 @@ display: none;
   overflow: auto;
  
 }
+/*Districts*/
+.Districts{
+  margin: 200px 100px;
+}
+.dt{
+  text-align: center;
+  margin: 50px 0;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.dp h1{
+margin: 25px 0;
+}
+.dp p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+}
