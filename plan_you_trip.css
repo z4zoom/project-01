@@ -223,20 +223,10 @@ transform: scale(1.025);
     border: none;
     outline: none;
   cursor: pointer;
-overflow: hidden;
-    transition: background 0.02s;
+ overflow: hidden;
   text-transform: uppercase;
 }
 
-.accordion_button::after{
-  content: '\25be';
-  float: right;
-  transform:scale(1.5) ;
-}
-.accordion_button--active::after{
-  content: '\25b4';
-
-} 
 .accordion_button--active{
   background: #555555;
 }
@@ -262,6 +252,30 @@ display: none;
 margin: 25px 0;
 }
 .dp p{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
+
+li h1{
+  text-transform: uppercase;
+  font-size: 40px;
+}
+li h3{
+  font-size: 30px;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+.li_flag{
+  margin: 30px 0px;
+}
+li img{
+  display: block;
+  width: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  max-height: 200px;
+  object-position: center;
+}
+li p{
   font-size: medium;
 }

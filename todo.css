@@ -38,7 +38,9 @@ ul li {
 }
 
 .container-2 {
-  text-align: center;
+    position: sticky;
+    top: 0;
+      text-align: center;
   z-index: 5;
   background-color: antiquewhite;
 }
@@ -53,16 +55,14 @@ ul li {
   transform: scale(1.5);
 }
 .photo{
-    height: 700px;
-    overflow: hidden;
+    height: auto;
     width: 100%;
 }
 .photo img{
     display: block;
   width: 100%;
-  aspect-ratio: 16/9;
   object-fit: cover;
-    height: 700px;
+    height: auto;
 
 }
 
